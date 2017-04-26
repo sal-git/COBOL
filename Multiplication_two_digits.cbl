@@ -13,12 +13,13 @@ DATA DIVISION.
 *in camalStyle or snake_style. Going with snake because it feels
 *right with COBOL lol
 
+*The multiplication line feels SQL esque, in that it is like a sentence      
+
 PROCEDURE DIVISION.
   DISPLAY "Enter first digit (1 digit): " WITH NO ADVANCING.
   ACCEPT Digit_1.
   DISPLAY "Enter second digit (1 digit): " WITH NO ADVANCING.
   ACCEPT Digit_2.
   MULTIPLY Digit_1 BY Digit_2 GIVING Product.
-  *The above line feels SQL esque, in that it is like a sentence
   DISPLAY "PRODUCT IS... = ", Product. 
   STOP RUN. 
